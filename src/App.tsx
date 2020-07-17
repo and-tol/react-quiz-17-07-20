@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {fetchQuizQuestion} from './API'
 // Components
 import { QuestionCard } from './components/QuestionCard/QuestionCard';
 
@@ -26,14 +27,14 @@ const App = () => {
       </button>
       <p className='score'>Score:</p>
       <p>Loading question...</p>
-      <QuestionCard
+      {/* <QuestionCard
         questionNr={number + 1}
         totalQuestions={TOTAL_QUESTIONS}
         question={questions[number].question}
         answers={questions[number].answers}
         userAnswer={useAnswers ? useAnswers[number] : undefined}
         callback={checkAnswer}
-      />
+      /> */}
       <button className='next' onClick={nextQuestion}>
         Next Qustion
       </button>
